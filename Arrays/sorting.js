@@ -14,8 +14,8 @@ const courses = [
 
 courses.sort((a, b) => {
     // a < b => -1;
-    // a > b => 1
-    // a === b => 0
+    // a > b => 1;
+    // a === b => 0;
     const uppercaseNameA = a.name.toUpperCase();
     const uppercaseNameB = b.name.toUpperCase();
 
