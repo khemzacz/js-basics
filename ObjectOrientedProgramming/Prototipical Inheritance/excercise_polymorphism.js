@@ -49,13 +49,9 @@ HtmlImageElement.prototype.render = function () {
 }
 
 HtmlSelectElement.prototype.render = function () {
-    result = `"<select>
-`
-    this.items.forEach(item => 
-        result += `  <option>${item}</option>
-`);
-    result += '</select>"';
-    return result;
+    return `<select>${this.items.map(item => `
+  <option>${item}</option>`).join('')}
+</select>`;
 }
 
 
